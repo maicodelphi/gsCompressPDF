@@ -29,14 +29,12 @@ begin
   result := False;
   try
     try
-      WriteLog('Compression started');
       oGS := TGhostScript.Create;
 
       oGS.ExecuteWithArgs(GetArgs);
       result := True;
     finally
       FreeAndNil(oGS);
-      WriteLog('Compression finished sucessfully');
     end;
   except
     on E: TExceptionGS do

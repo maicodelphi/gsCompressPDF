@@ -47,12 +47,13 @@ begin
     Halt(0);
   end;
   try
+    Writeln('Compression started at ' + DateTimeToStr(now));
     oCompressPDF := TCompressPDF.Create;
     oCompressPDF.PathInput := ParamStr(1);
     oCompressPDF.PathOutput := ParamStr(2);
-    oCompressPDF.Execute;
+    oCompressPDF.Execute;    
   finally
-    WriteLn('Compression Done. Check log folder.');
+    WriteLn('Compression Done at '+ DateTimeToStr(now) +'. Check log folder.');
   end;
 end.
 

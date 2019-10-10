@@ -54,3 +54,9 @@ ShellExecute(Handle, PChar('OPEN'), PChar('gsCompressPDF.exe'), PChar('input.pdf
 
 **You can call it as manny times as you need, using like multithread**
 
+**Original File**
+![2019-10-10_09h34_15](/uploads/4c811a012b98621cd309075ec9eb1f74/2019-10-10_09h34_15.png)
+
+
+**After compression**
+![2019-10-10_09h35_29](/uploads/83abedc084210cc2ef19567819c4d85e/2019-10-10_09h35_29.png)
