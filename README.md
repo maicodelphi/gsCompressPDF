@@ -1,4 +1,4 @@
-# delphi_pdf_compress
+# gsCompressPDF
 Compression of PDF files "multithread" in console application 
 You can get only .exe file and nothing else is needded to run.
 
