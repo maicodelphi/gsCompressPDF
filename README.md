@@ -1,6 +1,9 @@
 # delphi_pdf_compress
-Compression of PDF files "multithread" in Delphi using GhostScript
-Nothing else needed, only the console app.
+Compression of PDF files "multithread" in console application 
+You can get only .exe file and nothing else is needded to run.
+
+If you want to modify:
+	- Made in Delphi using GhostScript (Seattle>Tokio but should build in any version) 
 
 ## How it works
 
