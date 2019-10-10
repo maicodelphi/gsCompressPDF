@@ -1,1 +1,2 @@
 gsdll32 RCDATA "gsdll32.dll"
+Icon_1 ICON "gsCompressPDF_Icon.ico"
