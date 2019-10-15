@@ -37,9 +37,10 @@ ShellExecute(Handle, PChar('OPEN'), PChar('gsCompressPDF.exe'), PChar('input.pdf
 #### If you want to split the original file in multiples files, you can include %d on the output name, so the app create a new file for each page of the input pdf. 
 
 **Example**
+
 ![commandToSplit](/prints/commandToSplit.png)
 
-It creates one file per page replacinf page number instead of %d:
+It creates one file per page replacing page number instead of %d:
 output1.pdf
 output2.pdf
 output3.pdf
