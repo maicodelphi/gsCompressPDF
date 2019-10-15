@@ -36,10 +36,9 @@ ShellExecute(Handle, PChar('OPEN'), PChar('gsCompressPDF.exe'), PChar('input.pdf
 	
 #### If you want to split the original file in multiples files, you can include %d on the output name, so the app create a new file for each page of the input pdf. 
 
- Example 
-```
-gsCompressPDF.exe C:/temp/input.pdf output%d.pdf
-```
+**Example**
+![commandToSplit](/prints/commandToSplit.png)
+
 It creates one file per page replacinf page number instead of %d:
 output1.pdf
 output2.pdf
@@ -85,9 +84,9 @@ output3.pdf
 
 ##### You can call it as manny times as you need, using like multithread
 
-**Original File**
-![2019-10-10_09h34_15](/uploads/4c811a012b98621cd309075ec9eb1f74/2019-10-10_09h34_15.png)
+**Original File compressed in one file**
+![originalFileToCompressed](/prints/originalFileToCompressed.png)
 
 
-**After compression**
-![2019-10-10_09h35_29](/uploads/83abedc084210cc2ef19567819c4d85e/2019-10-10_09h35_29.png)
+**Original File being compressed in manny files**
+![originalFileToManny](/prints/originalFileToManny.png)
