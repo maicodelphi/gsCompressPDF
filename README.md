@@ -48,22 +48,48 @@ output3.pdf
 
 ### Inside parameters pass to GhostScript
 
-  -dSAFER															** Avoiding restrictions on unknown folders **
+  -dSAFER															
+  **Avoiding restrictions on unknown folders **
+
   -dBATCH
+
   -dNOPAUSE
-  -sDEVICE=pdfwrite										** That's device being used **
-  -dPDFSETTINGS=/ebook								** Quality of 150 dpi per file **
-  -dCompressFonts=true								** Making sure fonts are visually the same **
+
+  -sDEVICE=pdfwrite										
+  **That's device being used **
+  
+  -dPDFSETTINGS=/ebook								
+  **Quality of 150 dpi per file **
+  
+  -dCompressFonts=true								
+  **Making sure fonts are visually the same **
+  
   -dEmbedAllFonts=true
+  
   -dSubsetFonts=true
+  
   -dAutoRotatePages=/None
-  -dDownsampleColorImages=true				** Setting compression on images **
-  -dDownsampleGrayImages=true					** Setting compression on images **
-  -dColorImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
-  -dGrayImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
-  -dMonoImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
-  -dNOGC															** Turning of garbage colector **
-  -dNumRenderingThreads=8							** Number of CPU's being used to multithread operations **
+  
+  -dDownsampleColorImages=true				
+  **Setting compression on images **
+  
+  -dDownsampleGrayImages=true					
+  **Setting compression on images **
+  
+  -dColorImageDownsampleThreshold=1.0	
+  **It means the images are beign recreated at 108 dpi **
+  
+  -dGrayImageDownsampleThreshold=1.0	
+  **It means the images are beign recreated at 108 dpi **
+  
+  -dMonoImageDownsampleThreshold=1.0	
+  **It means the images are beign recreated at 108 dpi **
+  
+  -dNOGC															
+  **Turning of garbage colector **
+  
+  -dNumRenderingThreads=8							
+  **Number of CPU's being used to multithread operations **
 
 ## Retrictions:
 
