@@ -64,6 +64,7 @@ begin
   AddArg(oArgs, '-dColorImageDownsampleThreshold=1.0 \');
   AddArg(oArgs, '-dGrayImageDownsampleThreshold=1.0 \');
   AddArg(oArgs, '-dMonoImageDownsampleThreshold=1.0 \');
+  AddArg(oArgs, '-dNOGC \');
   AddArg(oArgs, '-dNumRenderingThreads=8 \');
   AddArg(oArgs, '-sOutputFile=' + AnsiString(fsPathOutput));
   AddArg(oArgs, '-f');

@@ -32,8 +32,39 @@ ShellExecute(Handle, PChar('OPEN'), PChar('gsCompressPDF.exe'), PChar('input.pdf
 	
 	PathOutput = Full Path that compressed file will be write on, with extension. If only the name is provided, gsCompressPDF will create a output file on his own folder. (eq. C:\temp\file_compressed.pdf)
 	
+	** If you want to split the original file in multiples files, you can include %d on the output name, so the app create a new file for each page of the input pdf. **
+
+** Example **
+```
+gsCompressPDF.exe C:/temp/input.pdf output%d.pdf
+```
+It creates one file per page replacinf page number instead of %d:
+output1.pdf
+output2.pdf
+output3.pdf
+.......
+
+
 	PathLog = Optional parameter. Use this if you want to have log files in a diferent folder then /logs. The application create one log per file.
 
+### Inside parameters pass to GhostScript
+
+  -dSAFER															** Avoiding restrictions on unknown folders **
+  -dBATCH
+  -dNOPAUSE
+  -sDEVICE=pdfwrite										** That's device being used **
+  -dPDFSETTINGS=/ebook								** Quality of 150 dpi per file **
+  -dCompressFonts=true								** Making sure fonts are visually the same **
+  -dEmbedAllFonts=true
+  -dSubsetFonts=true
+  -dAutoRotatePages=/None
+  -dDownsampleColorImages=true				** Setting compression on images **
+  -dDownsampleGrayImages=true					** Setting compression on images **
+  -dColorImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
+  -dGrayImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
+  -dMonoImageDownsampleThreshold=1.0	** It means the images are beign recreated at 108 dpi **
+  -dNOGC															** Turning of garbage colector **
+  -dNumRenderingThreads=8							** Number of CPU's being used to multithread operations **
 
 ## Retrictions:
 
